@@ -29,7 +29,7 @@ abstract class DBAbstractModel {
 
 # Desconectar la base de datos
 
-    private static function close_connection() {
+    protected static function close_connection() {
         self::$conn = null;
     }
 
